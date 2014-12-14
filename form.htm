@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Registration Form </title>
+<script>
+function validateform()
+{ var firstname=document.forms["regform"]["fname"].value;
+  if(firstname=="" || firstname==null)
+ { alert(" first name should be filled to complete registration ");
+ return false;
+ }
+}
+</script>
+</head>
+<body>
+<form name="regform" action="store.php"  method="post" onsubmit="return validateform()">
+<label for="fname">First name: </label>
+<input type="text" name="fname" id="fname" size=15>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<label for> Last name: </label>
+ <input type="text" name="lname" id="lname" size=15>
+<br>
+<br>
+<label for="sex"> Sex : </label> &nbsp;&nbsp;
+ <input type="radio" name="sex" id="sex" value="male" > Male &nbsp;&nbsp;&nbsp;   
+ <input type="radio" name="sex" id="sex" value="female"> Female
+
+<br>
+<br>
+<label for="dob"> D.O.B: </label>
+<input type="date" name="date" id="date" >
+<br><pre>
+<label for="address" > Address : </label>
+<textarea name="address" id="address" value="" rows="5" cols="40"></textarea>
+</pre>
+<br>
+<label for="city"> City : </label>
+<input type="text" name="city" id="city" value="">
+<br>
+<br>
+<label for="state"> State : </label>
+<select name=slist>
+<option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+<option value="Andhra Pradesh">Andhra Pradesh</option>
+<option value="Arunachal Pradesh">Arunachal Pradesh</option>
+<option value="Assam">Assam</option>
+<option value="Bihar">Bihar</option>
+<option value="Chandigarh">Chandigarh</option>
+<option value="Chhattisgarh">Chhattisgarh</option>
+<option value="Dadra and Nagar Haveli">Dadra and Nagar Haveli</option>
+<option value="Daman and Diu">Daman and Diu</option>
+<option value="Delhi">Delhi</option>
+<option value="Goa">Goa</option>
+<option value="Gujarat">Gujarat</option>
+<option value="Haryana">Haryana</option>
+<option value="Himachal Pradesh">Himachal Pradesh</option>
+<option value="Jammu and Kashmir">Jammu and Kashmir</option>
+<option value="Jharkhand">Jharkhand</option>
+<option value="Karnataka">Karnataka</option>
+<option value="Kerala">Kerala</option>
+<option value="Lakshadweep">Lakshadweep</option>
+<option value="Madhya Pradesh">Madhya Pradesh</option>
+<option value="Maharashtra">Maharashtra</option>
+<option value="Manipur">Manipur</option>
+<option value="Meghalaya">Meghalaya</option>
+<option value="Mizoram">Mizoram</option>
+<option value="Nagaland">Nagaland</option>
+<option value="Orissa">Orissa</option>
+<option value="Pondicherry">Pondicherry</option>
+<option value="Punjab">Punjab</option>
+<option value="Rajasthan">Rajasthan</option>
+<option value="Sikkim">Sikkim</option>
+<option value="Tamil Nadu">Tamil Nadu</option>
+<option value="Tripura">Tripura</option>
+<option value="Uttaranchal">Uttaranchal</option>
+<option value="Uttar Pradesh">Uttar Pradesh</option>
+<option value="West Bengal">West Bengal</option>
+</select>
+<br>
+<br>
+<Label for="number"> Contact Number : </label>
+<input type="text" name="prefix" value="+91" size="1" >
+<input type ="text" name="number" id="number" value="">
+<br>
+<br>
+<label for="email"> Email id : </label>
+<input type ="text" name="email" id="email" value="" size="50">
+<br>
+<br>
+
+
+<input type="submit" value="Submit">
+</form>
+</body>
+</html>
